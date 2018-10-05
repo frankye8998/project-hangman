@@ -9,7 +9,7 @@ $ pip install -r requirements.txt
 ## Word Lists
 You may add wordlists in the `settings.json` file. Make sure the lists seperate words by newlines (`\n`).
 
-##Features
+## Features
  * Customizable wordlists
  * ASCII art
  * Letter tracking
