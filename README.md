@@ -13,3 +13,8 @@ You may add wordlists in the `settings.json` file. Make sure the lists seperate 
  * Customizable wordlists
  * ASCII art
  * Letter tracking
+ * Awesomeness
+
+ ## TODO
+ * Allow local wordlists
+ * Allow CSV and other wordlist formats
