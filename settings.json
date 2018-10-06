@@ -1,8 +1,24 @@
 {  
-  "wordlist":{
-    "writing":"https://cdn.rawgit.com/imsky/wordlists/3fe4d009/nouns/writing.txt",
-    "food":"https://cdn.rawgit.com/imsky/wordlists/3fe4d009/nouns/food.txt",
-    "accounting":"https://cdn.rawgit.com/imsky/wordlists/3fe4d009/nouns/accounting.txt",
-    "algorithms":"https://cdn.rawgit.com/imsky/wordlists/3fe4d009/nouns/algorithms.txt"  
+  "wordlist":{  
+    "writing":[  
+      "https://cdn.rawgit.com/imsky/wordlists/3fe4d009/nouns/writing.txt",
+      "\n"
+    ],
+    "food":[  
+      "https://cdn.rawgit.com/imsky/wordlists/3fe4d009/nouns/food.txt",
+      "\n"
+    ],
+    "accounting":[  
+      "https://cdn.rawgit.com/imsky/wordlists/3fe4d009/nouns/accounting.txt",
+      "\n"
+    ],
+    "algorithms":[  
+      "https://cdn.rawgit.com/imsky/wordlists/3fe4d009/nouns/algorithms.txt",
+      "\n"
+    ],
+    "general": [
+      "https://pastebin.com/raw/1LhWV6XL",
+      " "
+    ]
   }
 }
