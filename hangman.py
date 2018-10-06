@@ -21,12 +21,6 @@ def main():
         print("An error occurred while attempting to read settings.json!")
         return
     
-    category, wordpage = random.choice(list(data['wordlist'].items()))
-    try:
-        words = requests.get(wordpage).text.split('\n')
-    except:
-        print("An error occurred while reading wordlists. Check your internet connection and try again!")
-        return
     welcome = [ '',
                 'Welcome to Hangman! A word will be chosen at random and',
                 'you must try to guess the word correctly letter by letter',
@@ -35,12 +29,20 @@ def main():
 
     for line in welcome:
         print(line, sep='\n')
-    print(("\nThe category of your word is: {}".format(category)))
+
 
     play_again = True
 
     while play_again:
-
+        wordset = random.choice(list(data['wordlist'].items()))
+        category = wordset[0]
+        wordpage = wordset[1][0]
+        try:
+            words = requests.get(wordpage).text.split(wordset[1][1])
+        except:
+            print("An error occurred while reading wordlists. Check your internet connection and try again!")
+            return
+        print(("\nThe category of your word is: {}".format(category)))
 
         chosen_word = random.choice(words).lower()
         player_guess = None 
