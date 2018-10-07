@@ -43,7 +43,14 @@ def main():
             try:
                 with open("./" + data['WordlistFolderName'] + "/" + category + categoryextension) as f:
                     temp = f.read()
-                    words = list(filter(None, temp.split(data['LocalFileDelimiter'])))
+                    if temp[:7].lower() == '!!!del:':
+                        delimiter = temp.split('\n')[0][7:].strip()
+                    elif categoryextension == '.csv':
+                        delimiter = ','
+                    else:
+                        delimiter = data['LocalFileDelimiter']
+
+                    words = list(filter(None, temp.split(delimiter)))
             except:
                 print("An error occurred while attempting to read wordlist!")
                 return
