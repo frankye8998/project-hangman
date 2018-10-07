@@ -10,13 +10,13 @@ def main():
         with open(os.path.join(os.path.dirname(__file__), 'settings.json')) as f:
             data = json.load(f)
     except json.decoder.JSONDecodeError:
-        print("An error occurred while parsing settings.json!")
+        print("\nAn error occurred while parsing settings.json!")
         return
     except FileNotFoundError:
-        print("settings.json was not found!")
+        print("\nsettings.json was not found!")
         return
     except:
-        print("An error occurred while attempting to read settings.json!")
+        print("\nsAn error occurred while attempting to read settings.json!")
         return
     welcome = [ '',
                 'Welcome to Hangman! A word will be chosen at random and',
@@ -36,7 +36,7 @@ def main():
             try:
                 category = random.choice(files)
             except IndexError:
-                print("No files found in wordlists folder!")
+                print("\nNo files found in wordlists folder!")
                 return
             categoryextension = '.' + category.split('.')[-1]
             category = ".".join(category.split('.')[:-1])
@@ -52,7 +52,7 @@ def main():
 
                     words = list(filter(None, temp.split(delimiter)))
             except:
-                print("An error occurred while attempting to read wordlist!")
+                print("\nAn error occurred while attempting to read wordlist!")
                 return
         else:
             wordset = random.choice(list(data['wordlist'].items()))
@@ -61,7 +61,7 @@ def main():
             try:
                 words = requests.get(wordpage).text.split(wordset[1][1])
             except:
-                print("An error occurred while reading wordlists. Check your internet connection and try again!")
+                print("\nAn error occurred while reading wordlists. Check your internet connection and try again!")
                 return
         print(("\nThe category of your word is: {}".format(category)))
         chosen_word = random.choice(words).lower().strip()
