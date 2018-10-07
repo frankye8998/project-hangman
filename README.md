@@ -16,4 +16,4 @@ You may add wordlists in the `settings.json` file. Make sure the lists seperate 
  * Awesomeness
 
  ## TODO
- * Allow local wordlists
+ * Allow different delimiters for different files
