@@ -1,5 +1,5 @@
 {
-  "UseLocalWordlistInsteadOfLinks": true,
+  "UseLocalWordlistInsteadOfLinks": false,
   "WordlistFolderName":"wordlists",
   "LocalFileDelimiter":"\n",
   "wordlist":{
