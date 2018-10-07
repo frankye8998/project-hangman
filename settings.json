@@ -1,6 +1,7 @@
 {
   "UseLocalWordlistInsteadOfLinks": true,
   "WordlistFolderName":"wordlists",
+  "LocalFileDelimiter":"\n",
   "wordlist":{
     "writing":[
       "https://cdn.rawgit.com/imsky/wordlists/3fe4d009/nouns/writing.txt",

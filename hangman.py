@@ -43,7 +43,7 @@ def main():
             try:
                 with open("./" + data['WordlistFolderName'] + "/" + category + categoryextension) as f:
                     temp = f.read()
-                    words = list(filter(None, temp.split("\n")))
+                    words = list(filter(None, temp.split(data['LocalFileDelimiter'])))
             except:
                 print("An error occurred while attempting to read wordlist!")
                 return
