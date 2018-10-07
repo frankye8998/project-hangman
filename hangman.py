@@ -62,7 +62,7 @@ def main():
                 words = requests.get(wordpage).text.split(wordset[1][1])
             except:
                 print("An error occurred while reading wordlists. Check your internet connection and try again!")
-            return
+                return
         print(("\nThe category of your word is: {}".format(category)))
         chosen_word = random.choice(words).lower().strip()
         player_guess = None 
