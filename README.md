@@ -29,7 +29,7 @@ You may add wordlists in the `settings.json` file. Local wordlists automatically
 
 ## Contributing
 
-Submit a pull request and email me.
+Submit a pull request and [email](mailto:frankye8998@gmail.com?Subject=Project%20Hangman) me.
 
 ## Authors
 
