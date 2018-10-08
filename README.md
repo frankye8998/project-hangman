@@ -46,3 +46,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
  ## Contact
 
  You may [email](mailto:frankye8998@gmail.com?Subject=Project%20Hangman) me or shoot me a message on [Instagram](https://www.instagram.com/frankye8998/).
+
+Or use the [Gmail link](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=frankye8998@gmail.com&su=Project%20Hangman).
