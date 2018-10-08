@@ -41,18 +41,19 @@ def main():
             categoryextension = '.' + category.split('.')[-1]
             category = ".".join(category.split('.')[:-1])
             try:
-                with open("./" + data['WordlistFolderName'] + "/" + category + categoryextension) as f:
+                with open(os.path.dirname(os.path.realpath(__file__)) + '/' + data['WordlistFolderName'] + "/" + category + categoryextension) as f:
                     temp = f.read()
                     if temp[:7].lower() == '!!!del:':
-                        delimiter = temp.split('\n')[0][7:].strip()
+                        delimiter = temp.split('\n')[0][7:].strip().replace("<space>"," ")
                     elif categoryextension == '.csv':
                         delimiter = ','
                     else:
                         delimiter = data['LocalFileDelimiter']
 
                     words = list(filter(None, temp.split(delimiter)))
-            except:
+            except Exception as e:
                 print("\nAn error occurred while attempting to read wordlist!")
+                print(e)
                 return
         else:
             wordset = random.choice(list(data['wordlist'].items()))
@@ -236,7 +237,7 @@ def main():
                 attempts -= 1
                 print(HANGMAN[(len(HANGMAN) - 1) - attempts])
         if "-" not in word_guessed:
-            print(("\nCongratulations! {} was the word").format(chosen_word))
+            print(("\nCongratulations! {} was the word!").format(chosen_word))
         else:
             print(("\nUnlucky! The word was {}.").format(chosen_word))
         print("\nWould you like to play again?")
