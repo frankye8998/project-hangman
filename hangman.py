@@ -51,9 +51,8 @@ def main():
                         delimiter = data['LocalFileDelimiter']
 
                     words = list(filter(None, temp.split(delimiter)))
-            except Exception as e:
+            except:
                 print("\nAn error occurred while attempting to read wordlist!")
-                print(e)
                 return
         else:
             wordset = random.choice(list(data['wordlist'].items()))
