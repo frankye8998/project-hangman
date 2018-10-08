@@ -41,7 +41,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
  ## TODO
  * Include more common formats
- * Ask Sean what those formats are
 
  ## Contact
 
