@@ -13,7 +13,7 @@ $ git clone https://github.com/frankye8998/project-hangman
 $ cd project-hangman
 $ pip install -r requirements.txt
 ```
-Alternatively, you may use the [ZIP download link](https://github.com/frankye8998/project-hangman/archive/v0.1.zip).
+Alternatively, you may use the [ZIP download link](https://github.com/frankye8998/project-hangman/archive/v0.1.zip) or the [TAR.GZ download link](https://github.com/frankye8998/project-hangman/archive/v0.1.tar.gz).
 
 ### Setting up word lists
 
